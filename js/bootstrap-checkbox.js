@@ -21,7 +21,10 @@
     if (className) { welNew.attr('class', className) }
     welNew.addClass('bootstrap-checkbox');
     if (style) { welNew.attr('style', style); }
-    if (checked) { welNew.addClass('checked'); }
+    if (checked) {
+      welNew.addClass('checked');
+      welNew.html('<i class="icon-ok"></i>');
+    }
 
     checkbox.value = value;
     checkbox.checked = checked;
